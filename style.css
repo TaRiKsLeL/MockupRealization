@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@700&family=Roboto&display=swap');
+
+/* .background-gradient{
+    background: rgb(255,229,135);
+    background: linear-gradient(0deg, rgba(255,229,135,1) 0%, rgba(243,129,129,1) 100%);
+} */
+
+.carousel-item h2{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 35pt;
+    color:white;
+}
+
+.carousel-item h3{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50pt;
+    color:white;
+}
