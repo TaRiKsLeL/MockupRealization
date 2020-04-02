@@ -1,10 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto&display=swap');
 
 /* .background-gradient{
     background: rgb(255,229,135);
     background: linear-gradient(0deg, rgba(255,229,135,1) 0%, rgba(243,129,129,1) 100%);
 } */
 
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bgcolor {
+    background-image: url('images/backgroud-gradient.png') !important;
+    background-repeat: repeat-x;
+}
+
+.bg-blue-color{
+    background-image: url('images/backgroud-blue-color.png') !important;
+}
+
+
+/*SECTIONS SIMILARITIES*/
+
+.section-subtitle{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20pt;
+    color:black;
+    position: relative;
+    left: 43%;
+}
+
+
+.section-title{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 25pt;
+    color:black;
+    position: relative;
+    left: 35%;
+}
+
+.titles-separator{
+    width: 20%;
+    border-width: 3px;
+    border-color: #f38181;
+}
+
+#about, #about .card-deck, #about .card-group, #services, #progress, footer{
+    margin-top: 100px;
+}
+/*SECTIONS SIMILARITIES*/
+
+
+/*FONTS*/
+/*FONTS*/
+
+
+/* NAVBAR */
+
+nav a.navbar-brand.col-md-6{
+    font-weight: 700;
+}
+
+nav a.nav-item.nav-link{
+    text-transform: uppercase;
+}
+
+.navbar-nav .active{
+    border-bottom: #fce38a 2pt solid;
+    color: #fce38a; 
+}
+
+/* NAVBAR */
+
+/* CAROUSEL */
 .carousel-item h2{
     font-family: 'Kaushan Script', cursive;
     font-size: 35pt;
@@ -13,7 +82,47 @@
 
 .carousel-item h3{
     text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     font-size: 50pt;
     color:white;
 }
+/* CAROUSEL */
+
+/*ABOUT SECTION*/
+
+#about .section-desc{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+    color:gray;
+}
+
+#about .card-group .card-value {
+    font-weight: 700;
+    font-size: 50pt;
+}
+
+#about .card-group .card-description {
+    font-size: 11pt;
+}
+
+/*ABOUT SECTION*/
+
+
+/*FOOTER*/
+
+footer hr{
+    border-width: 2px;
+}
+
+footer a{
+    color:#f38181;
+    
+    transition: 1s ease-out;
+}
+
+footer a:hover{
+    text-decoration: none;
+    color: #a932ad;
+}
+
+/*FOOTER*/
