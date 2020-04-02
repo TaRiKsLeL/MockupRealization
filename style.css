@@ -54,15 +54,20 @@ body{
 
 /* NAVBAR */
 
-nav a.navbar-brand.col-md-6{
+nav a.navbar-brand.col-md-6 {
     font-weight: 700;
 }
 
-nav a.nav-item.nav-link{
+nav a.nav-item.nav-link {
     text-transform: uppercase;
 }
 
-.navbar-nav .active{
+.navbar-light .navbar-brand.navbar-light .navbar-brand, 
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link.active{
     border-bottom: #fce38a 2pt solid;
     color: #fce38a; 
 }
@@ -94,6 +99,10 @@ nav a.nav-item.nav-link{
 
 #about .card-group .card{
     background: #95e1d3;
+}
+
+#about .card-group .card-body{
+    color: white;
 }
 
 #about .card-group .card-value {
