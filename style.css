@@ -7,7 +7,8 @@
 
 
 body{
-    font-family: 'Montserrat', sans-serif;
+	overflow-x: hidden;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .bgcolor {
@@ -23,17 +24,16 @@ body{
 /*SECTIONS SIMILARITIES*/
 
 .section-subtitle{
-    font-family: 'Kaushan Script', cursive;
-    font-size: 20pt;
-    color:black;
+	font-family: 'Kaushan Script', cursive;
+	font-size: 20pt;
+	color:black;
 }
 
-
 .section-title{
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 25pt;
-    color:black;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 25pt;
+	color:black;
 }
 
 .titles-separator{
@@ -48,11 +48,35 @@ body{
 /*SECTIONS SIMILARITIES*/
 
 
-/*FONTS*/
-/*FONTS*/
-
+.heroes {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.heroes::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background: linear-gradient(0deg, rgba(255,229,135,1) 0%, rgba(243,129,129,1) 100%);
+    opacity: 0.85;
+}
 
 /* NAVBAR */
+.heroes .heroes-nav {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    width: 100%;
+}
+
 
 nav a.navbar-brand.col-md-6 {
     font-weight: 700;
@@ -75,6 +99,22 @@ nav a.nav-item.nav-link {
 /* NAVBAR */
 
 /* CAROUSEL */
+
+.heroes .carousel,
+.heroes .carousel-item {
+    height: 100vh;
+}
+.heroes .carousel-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+}
+.heroes .carousel-content-suptitle {
+    margin-bottom: 20px;
+}
+
 .carousel-item h2{
     font-family: 'Kaushan Script', cursive;
     font-size: 35pt;
@@ -97,8 +137,29 @@ nav a.nav-item.nav-link {
     color:gray;
 }
 
+.overlay:hover::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: block;
+	background: linear-gradient(0deg, rgba(255,229,135,1) 0%, rgba(243,129,129,1) 100%);
+	opacity: 0.9;
+}
+
+
+#about .card-deck .card {
+	transition: .3s ease;
+}
+#about .card-deck .card:hover {
+	/*background: #95e1d3;*/
+	box-shadow: 8px 8px 0 #95e1d3;
+}
+
 #about .card-group .card{
-    background: #95e1d3;
+	background: #95e1d3;
 }
 
 #about .card-group .card-body{
