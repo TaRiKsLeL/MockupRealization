@@ -38,6 +38,16 @@ body{
 	opacity: 0.9;
 }
 
+.overlay-content:hover::after{
+    content: "SUPER TEAM";
+    color:white;
+    position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	display: block;
+}
+
 .transition-3sec {
 	transition: .3s ease;
 }
