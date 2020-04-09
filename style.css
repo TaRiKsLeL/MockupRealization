@@ -43,6 +43,7 @@ body{
 }
 
 .block-shadow:hover {
+    transform: translate(-3%, -3%);
 	box-shadow: 8px 8px 0 #95e1d3;
 }
 
