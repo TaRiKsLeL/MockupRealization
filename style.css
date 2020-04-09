@@ -1,39 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto&display=swap');
-
-/* .background-gradient{
-    background: rgb(255,229,135);
-    background: linear-gradient(0deg, rgba(255,229,135,1) 0%, rgba(243,129,129,1) 100%);
-} */
-
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto&family=Pacifico&display=swap');
 
 body{
 	overflow-x: hidden;
-	font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    color:#333333;
 }
-
-.bgcolor {
-    background-image: url('images/backgroud-gradient.png') !important;
-    background-repeat: repeat-x;
-}
-
-.bg-blue-color{
-    background-image: url('images/backgroud-blue-color.png') !important;
-}
-
 
 /*SECTIONS SIMILARITIES*/
 
 .section-subtitle{
-	font-family: 'Kaushan Script', cursive;
+	font-family: 'Pacifico', cursive;
 	font-size: 20pt;
-	color:black;
 }
 
 .section-title{
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 25pt;
-	color:black;
 }
 
 .titles-separator{
@@ -42,9 +25,10 @@ body{
     border-color: #f38181;
 }
 
-#about, #about .card-deck, #about .card-group, #services, #progress, footer{
+#about, #about .card-deck, #about .card-group, #services,#services .items, #devices, #progress,.partners, footer{
     margin-top: 100px;
 }
+
 /*SECTIONS SIMILARITIES*/
 
 
@@ -134,7 +118,7 @@ nav a.nav-item.nav-link {
 #about .section-desc{
     font-family: 'Roboto', sans-serif;
     font-size: 12pt;
-    color:gray;
+    color:#999999;
 }
 
 .overlay:hover::before {
@@ -177,6 +161,77 @@ nav a.nav-item.nav-link {
 
 /*ABOUT SECTION*/
 
+/* SERVICES SECTION */
+
+#services .serv-item{
+    min-height: 100px;
+}
+
+#services .serv-item-title{
+    font-weight: 600;
+} 
+
+#services .serv-item-description{
+    font-family: 'Roboto', sans-serif;
+    color: #999999;
+} 
+
+/* SERVICES SECTION */
+
+/* DEVICES SECTION */
+
+#devices{
+    padding-top: 100px;
+    /* height: 100vh; */
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+#devices::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    display: block;
+    opacity: 0.8;
+    z-index: -1;
+}
+.devices-images{
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.devices-ipad{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.devices-iphone{
+    position: absolute;
+    max-width: 100%;
+    bottom: -100px;
+    right: 0;
+}
+
+/* DEVICES SECTION */
+
+/* PARTNERS SECTION */
+
+.partners{
+    background-color: #f8f8f8;
+    padding: 40px 0;
+}
+
+/* PARTNERS SECTION */
+
 
 /*FOOTER*/
 
@@ -196,3 +251,26 @@ footer a:hover{
 }
 
 /*FOOTER*/
+
+
+@media screen and (max-width: 767px){
+
+}
+
+@media screen and (max-width: 576px){
+
+    .devices-iphone{
+        max-width: 50%;
+    }
+
+    .serv-item-logo{
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #services .serv-item-title, #services .serv-item-description{
+        text-align: center;
+    } 
+}
