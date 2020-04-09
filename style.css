@@ -25,9 +25,79 @@ body{
     border-color: #f38181;
 }
 
-#about, #about .card-deck, #about .card-group, #services,#services .items, #devices, #progress,.partners, footer{
-    margin-top: 100px;
+
+.overlay:hover::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: block;
+	background: linear-gradient(0deg, rgba(255,229,135,1) 0%, rgba(243,129,129,1) 100%);
+	opacity: 0.9;
 }
+
+.transition-3sec {
+	transition: .3s ease;
+}
+
+.block-shadow:hover {
+	box-shadow: 8px 8px 0 #95e1d3;
+}
+
+.card{
+    border: none;
+}
+
+.mt-100{
+    margin-top:100px;
+}
+
+.mt-50{
+    margin-top:50px;
+}
+
+.mb-100{
+    margin-bottom:100px;
+}
+
+.mb-50{
+    margin-bottom:50px;
+}
+
+.w-light{
+    font-weight: 300;
+}
+.w-regular{
+    font-weight: 400;
+}
+.w-medium{
+    font-weight: 500;
+}    
+.w-semibold{
+    font-weight: 600;
+}
+.w-bold{
+    font-weight: 700;
+}
+.w-extrabold{
+    font-weight: 800;
+}   
+.w-black{
+	font-weight: 900;
+}
+
+.item-title{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.item-description{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+    color:#999999;
+} 
 
 /*SECTIONS SIMILARITIES*/
 
@@ -107,40 +177,12 @@ nav a.nav-item.nav-link {
 
 .carousel-item h3{
     text-transform: uppercase;
-    font-weight: 700;
-    font-size: 50pt;
+    font-size: 55pt;
     color:white;
 }
 /* CAROUSEL */
 
 /*ABOUT SECTION*/
-
-#about .section-desc{
-    font-family: 'Roboto', sans-serif;
-    font-size: 12pt;
-    color:#999999;
-}
-
-.overlay:hover::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	display: block;
-	background: linear-gradient(0deg, rgba(255,229,135,1) 0%, rgba(243,129,129,1) 100%);
-	opacity: 0.9;
-}
-
-
-#about .card-deck .card {
-	transition: .3s ease;
-}
-#about .card-deck .card:hover {
-	/*background: #95e1d3;*/
-	box-shadow: 8px 8px 0 #95e1d3;
-}
 
 #about .card-group .card{
 	background: #95e1d3;
@@ -166,15 +208,6 @@ nav a.nav-item.nav-link {
 #services .serv-item{
     min-height: 100px;
 }
-
-#services .serv-item-title{
-    font-weight: 600;
-} 
-
-#services .serv-item-description{
-    font-family: 'Roboto', sans-serif;
-    color: #999999;
-} 
 
 /* SERVICES SECTION */
 
@@ -270,7 +303,7 @@ footer a:hover{
         align-items: center;
     }
 
-    #services .serv-item-title, #services .serv-item-description{
+    #services .item-title, #services .item-description{
         text-align: center;
     } 
 }

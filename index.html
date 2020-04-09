@@ -25,10 +25,10 @@
 				</button>
 				<div class="collapse navbar-collapse col justify-content-end" id="navbarNavAltMarkup">
 						<div class="navbar-nav">
-								<a class="nav-item nav-link active" href="#">About <span class="sr-only">(current)</span></a>
-								<a class="nav-item nav-link" href="#">Servise</a>
-								<a class="nav-item nav-link" href="#">Work</a>
-								<a class="nav-item nav-link" href="#">Blog</a>
+								<a class="nav-item nav-link active" href="#about">About <span class="sr-only">(current)</span></a>
+								<a class="nav-item nav-link" href="#services">Послуги</a>
+								<a class="nav-item nav-link" href="#devices">Дизайн</a>
+								<a class="nav-item nav-link" href="#team">Команда</a>
 								<a class="nav-item nav-link" href="#">Content</a>
 								<!-- <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
 						</div>
@@ -47,22 +47,22 @@
 					<div class="carousel-item active">
 						<div class="carousel-content container text-center">
 								<h2 class="carousel-content-suptitle">Hello, Dude</h3>
-								<h3 class="carousel-content-title">Welcome<br>to Tarko</h3>
+								<h3 class="carousel-content-title w-bold">Welcome<br>to Tarko</h3>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<div class="carousel-content container text-center">
-								<h3 class="carousel-content-title">Дякую,<br>що завітав</h3>
+								<h3 class="carousel-content-title w-bold">Дякую,<br>що завітав</h3>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<div class="carousel-content container text-center">
-								<h3 class="carousel-content-title">Тут інформація<br>про нас</h3>
+								<h3 class="carousel-content-title w-bold">Тут інформація<br>про нас</h3>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<div class="carousel-content container text-center">
-								<h3 class="carousel-content-title">А тут<br>наші контакти</h3>
+								<h3 class="carousel-content-title w-bold">А тут<br>наші контакти</h3>
 						</div>
 					</div>
 				</div>
@@ -77,29 +77,29 @@
 		</div>
 	</section>
 
-	<section id="about">
+	<section id="about" class="mt-100">
 			
 			<div class="container">
 
 					<h3 class="text-center section-subtitle">Чим ми займаємось</h3> <!--text-center не працює-->
 					<h2 class="text-center section-title">ІСТОРІЯ ПРО НАС</h2>   <!--text-center не працює-->
 					<hr class="titles-separator">
-					<p class="section-desc text-center row">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+					<p class="item-description text-center mt-50">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 
-					<div class="card-deck">
-							<div class="card overlay">
+					<div class="card-deck mt-50">
+							<div class="card overlay transition-3sec block-shadow">
 								<img class="card-img-top" src="images/card-img1.png" alt="Card image cap">
 							</div>
-							<div class="card overlay">
+							<div class="card overlay transition-3sec block-shadow">
 								<img class="card-img-top" src="images/card-img2.png" alt="Card image cap">
 							</div>
-							<div class="card overlay">
+							<div class="card overlay transition-3sec block-shadow">
 								<img class="card-img-top" src="images/card-img3.png" alt="Card image cap">
 							</div>
 						</div>
 					</div>    
 
-					<div class="container-fluid" style="background-color: #95e1d3;">
+					<div class="container-fluid mt-100" style="background-color: #95e1d3;">
 						<div class="container">
 						<div class="card-group">
 							<div class="card">
@@ -132,21 +132,21 @@
 			
 	</section>
 
-	<section id="services" class="container">
+	<section id="services" class="container mt-100">
 
 					<h3 class="section-subtitle text-center">З чим ми працюємо</h3> 
 					<h2 class="section-title text-center">Високоякісні послуги</h2>
 					<hr class="titles-separator">
 
-					<div class="row items">
+					<div class="row items mt-100">
 						<div class="serv-item col-md-4 container">
 							<div class="row">
 								<div class="serv-item-logo col-sm-auto col-12">
 									<img src="images\logos\ALARM.png" alt="Card image cap">
 								</div>
 								<div class="serv-item-info col">
-									<p class="serv-item-title">Photography</p>
-									<p class="serv-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+									<p class="item-title">Photography</p>
+									<p class="item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
 								</div>
 							</div>
 						</div>
@@ -156,8 +156,8 @@
 									<img src="images\logos\LINE GRAPH.png" alt="Card image cap">
 								</div>
 								<div class="serv-item-info col">
-									<p class="serv-item-title">Web design</p>
-									<p class="serv-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+									<p class="item-title">Web design</p>
+									<p class="item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
 								</div>
 							</div>
 						</div>
@@ -167,8 +167,8 @@
 									<img src="images\logos\COMPUTER _ OK.png" alt="Card image cap">
 								</div>
 								<div class="serv-item-info col">
-									<p class="serv-item-title">Creativity</p>
-									<p class="serv-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+									<p class="item-title">Creativity</p>
+									<p class="item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
 								</div>
 							</div>
 						</div>
@@ -180,8 +180,8 @@
 									<img src="images\logos\BOOK 2.png" alt="Card image cap">
 								</div>
 								<div class="serv-item-info col">
-									<p class="serv-item-title">Seo</p>
-									<p class="serv-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+									<p class="item-title">Seo</p>
+									<p class="item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
 									
 								</div>
 							</div>
@@ -192,8 +192,8 @@
 									<img src="images\logos\HOME.png" alt="Card image cap">
 								</div>
 								<div class="serv-item-info col">
-									<p class="serv-item-title">CSS/HTML</p>
-									<p class="serv-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+									<p class="item-title">CSS/HTML</p>
+									<p class="item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
 								</div>
 							</div>
 						</div>
@@ -203,8 +203,8 @@
 									<img src="images\logos\IMAGE.png" alt="Card image cap">
 								</div>
 								<div class="serv-item-info col">
-									<p class="serv-item-title">Digital</p>
-									<p class="serv-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+									<p class="item-title">Digital</p>
+									<p class="item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
 								</div>
 							</div>
 						</div>
@@ -212,7 +212,7 @@
 					</div>
 	</section>
 
-	<section id="devices" class="devices" style="background-image: url(https://images.wallpaperscraft.com/image/mountain_sky_bw_127856_3840x2160.jpg);">
+	<section id="devices" class="devices mt-100" style="background-image: url(https://images.wallpaperscraft.com/image/mountain_sky_bw_127856_3840x2160.jpg);">
 		<h3 class="section-subtitle text-center">Для всіх девайсів</h3> 
 		<h2 class="section-title text-center">Унікальний дизайн</h2>
 		<hr class="titles-separator">
@@ -225,40 +225,51 @@
 	</section>
 	
 
-	<section class="team">
+	<section id="team" class="team mt-100">
+		
 		<div class="container">
+
+			<h3 class="text-center section-subtitle">Хто ми</h3> <!--text-center не працює-->
+					<h2 class="text-center section-title">ЗУСТРІЧАЙТЕ НАШУ КОМАНДУ</h2>   <!--text-center не працює-->
+					<hr class="titles-separator">
+					<p class="item-description text-center mt-50">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+
 			<div class="row">
-				<div class="card-deck">
-					<div class="card">
-					  <img class="card-img-top" src="images/team/teammate0.png" alt="Card image cap">
-					  <div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-					  </div>
+				<div class="card-deck mt-50">
+					<div class="card ">
+					  	<div class="overlay transition-3sec block-shadow position-relative">
+						  <img class="card-img-top" src="images/team/teammate0.png" alt="Card image cap">
+						</div>
+						<div class="card-body text-center">
+							<h5 class="card-title item-title">Андрій</h5>
+							<p class="card-text item-description">Графічний дизайн</p>
+						</div>
 					</div>
 					<div class="card">
-					  <img class="card-img-top" src="images/team/teammate1.png" alt="Card image cap">
-					  <div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-					  </div>
+						<div class="overlay transition-3sec block-shadow position-relative">
+					  		<img class="card-img-top" src="images/team/teammate1.png" alt="Card image cap">
+						</div>
+						<div class="card-body text-center">
+							<h5 class="card-title item-title">Олег</h5>
+							<p class="card-text item-description">Маркетолог</p>
+						</div>
 					</div>
 					<div class="card">
-					  <img class="card-img-top" src="images/team/teammate3.png" alt="Card image cap">
-					  <div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-					  </div>
+						<div class="overlay transition-3sec block-shadow position-relative">
+					  		<img class="card-img-top" src="images/team/teammate3.png" alt="Card image cap">
+						</div>
+						<div class="card-body text-center">
+							<h5 class="card-title item-title">Максим</h5>
+							<p class="card-text item-description">Розробник</p>
+						</div>
 					</div>
 				  </div>
 			</div>
 		</div>
 	</section>
 
-	<section class="partners">
+	<section class="partners mt-100">
 		<div class="container">
 			<div class="row flex-wrap justify-content-center">
 				<div class="col-auto">
@@ -288,7 +299,7 @@
 			<p class="text-center">...<br>Верстка все ще в процесі ;)</p>
 	</section>
 
-	<footer class="container text-center">
+	<footer class="container text-center mt-100">
 			<hr>
 			&copy; 2020 Realization by
 			<a href="https://tarikslel.github.io/ResumeWebsite/resume.html">
