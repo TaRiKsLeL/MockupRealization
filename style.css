@@ -299,9 +299,25 @@ footer a:hover{
 
 @media screen and (max-width: 767px){
 
+    .carousel-item h2{
+        font-size: 25pt;
+    }
+    
+    .carousel-item h3{
+        font-size: 45pt;
+    }
+
 }
 
 @media screen and (max-width: 576px){
+
+    .carousel-item h2{
+        font-size: 17pt;
+    }
+    
+    .carousel-item h3{
+        font-size: 30pt;
+    }
 
     .devices-iphone{
         max-width: 50%;
