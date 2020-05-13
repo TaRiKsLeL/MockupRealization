@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto&family=Pacifico&display=swap');
+
+body{
+	overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    color:#333333;
+}
+
+/*SECTIONS SIMILARITIES*/
+
+.section-subtitle{
+	font-family: 'Pacifico', cursive;
+	font-size: 20pt;
+}
+
+.section-title{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 25pt;
+}
+
+.titles-separator{
+    width: 20%;
+    border-width: 3px;
+    border-color: #f38181;
+}
+
+
+.overlay:hover::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: block;
+	background: linear-gradient(0deg, rgba(255,229,135,1) 0%, rgba(243,129,129,1) 100%);
+	opacity: 0.9;
+}
+
+.overlay-content:hover::after{
+    content: "SUPER TEAM";
+    color:white;
+    position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	display: block;
+}
+
+.transition-3sec {
+	transition: .3s ease;
+}
+
+.block-shadow:hover {
+    transform: translate(-3%, -3%);
+	box-shadow: 9px 9px 0 #95e1d3;
+}
+
+.card{
+    border: none;
+}
+
+.mt-100{
+    margin-top:100px;
+}
+
+.mt-50{
+    margin-top:50px;
+}
+
+.mb-100{
+    margin-bottom:100px;
+}
+
+.mb-50{
+    margin-bottom:50px;
+}
+
+.w-light{
+    font-weight: 300;
+}
+.w-regular{
+    font-weight: 400;
+}
+.w-medium{
+    font-weight: 500;
+}    
+.w-semibold{
+    font-weight: 600;
+}
+.w-bold{
+    font-weight: 700;
+}
+.w-extrabold{
+    font-weight: 800;
+}   
+.w-black{
+	font-weight: 900;
+}
+
+.item-title{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.item-description{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+    color:#999999;
+} 
+
+/*SECTIONS SIMILARITIES*/
+
+
+.heroes {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.heroes::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background: linear-gradient(0deg, rgba(255,229,135,1) 0%, rgba(243,129,129,1) 100%);
+    opacity: 0.85;
+}
+
+/* NAVBAR */
+.heroes .heroes-nav {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    width: 100%;
+}
+
+
+nav a.navbar-brand.col-md-6 {
+    font-weight: 700;
+}
+
+nav a.nav-item.nav-link {
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-brand.navbar-light .navbar-brand, 
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link.active{
+    border-bottom: #fce38a 2pt solid;
+    color: #fce38a; 
+}
+
+/* NAVBAR */
+
+/* CAROUSEL */
+
+.heroes .carousel,
+.heroes .carousel-item {
+    height: 100vh;
+}
+.heroes .carousel-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+}
+.heroes .carousel-content-suptitle {
+    margin-bottom: 20px;
+}
+
+.carousel-item h2{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 35pt;
+    color:white;
+}
+
+.carousel-item h3{
+    text-transform: uppercase;
+    font-size: 55pt;
+    color:white;
+}
+/* CAROUSEL */
+
+/*ABOUT SECTION*/
+
+#about .card-group .card{
+	background: #95e1d3;
+}
+
+#about .card-group .card-body{
+    color: white;
+}
+
+#about .card-group .card-value {
+    font-weight: 700;
+    font-size: 50pt;
+}
+
+#about .card-group .card-description {
+    font-size: 11pt;
+}
+
+/*ABOUT SECTION*/
+
+/* SERVICES SECTION */
+
+#services .serv-item{
+    min-height: 100px;
+}
+
+/* SERVICES SECTION */
+
+/* DEVICES SECTION */
+
+#devices{
+    padding-top: 100px;
+    /* height: 100vh; */
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+#devices::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    display: block;
+    opacity: 0.8;
+    z-index: -1;
+}
+.devices-images{
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.devices-ipad{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.devices-iphone{
+    position: absolute;
+    max-width: 100%;
+    bottom: -100px;
+    right: 0;
+}
+
+/* DEVICES SECTION */
+
+/* PARTNERS SECTION */
+
+.partners{
+    background-color: #f8f8f8;
+    padding: 40px 0;
+}
+
+/* PARTNERS SECTION */
+
+
+/*FOOTER*/
+
+footer hr{
+    border-width: 2px;
+}
+
+footer a{
+    color:#f38181;
+    
+    transition: 1s ease-out;
+}
+
+footer a:hover{
+    text-decoration: none;
+    color: #a932ad;
+}
+
+/*FOOTER*/
+
+
+@media screen and (max-width: 767px){
+
+    .carousel-item h2{
+        font-size: 25pt;
+    }
+    
+    .carousel-item h3{
+        font-size: 45pt;
+    }
+
+}
+
+@media screen and (max-width: 576px){
+
+    .carousel-item h2{
+        font-size: 17pt;
+    }
+    
+    .carousel-item h3{
+        font-size: 30pt;
+    }
+
+    .devices-iphone{
+        max-width: 50%;
+    }
+
+    .serv-item-logo{
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #services .item-title, #services .item-description{
+        text-align: center;
+    } 
+}
