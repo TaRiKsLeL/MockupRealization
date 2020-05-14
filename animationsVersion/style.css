@@ -285,6 +285,16 @@ nav a.nav-item.nav-link {
 
 /* DEVICES SECTION */
 
+/* REVIEWS SECTION */
+
+.review-info-text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18pt;
+    color:#999999;
+}
+
+/* REVIEWS SECTION */
+
 /* PARTNERS SECTION */
 
 .partners{
