@@ -193,6 +193,24 @@ nav a.nav-item.nav-link {
 }
 /* CAROUSEL */
 
+/*  LOGO DOWN */
+.arrow-down{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+
+    animation: upDown 1s linear 2s infinite alternate;
+}
+.arrow-down-img{
+    background-repeat: no-repeat;
+}
+
+@keyframes upDown {
+    from {bottom: 30px;}
+    to {bottom: 10px;}
+  }
+/*  LOGO DOWN */
+
 /*ABOUT SECTION*/
 
 #about .card-group .card{

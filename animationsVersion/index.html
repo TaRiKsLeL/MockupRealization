@@ -8,6 +8,12 @@
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+		<!-- Animate -->
+		<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+	  />
+
 		<!--My CSS-->
 		<link rel="stylesheet" type="text/css" href="style.css">
 
@@ -65,6 +71,10 @@
 								<h3 class="carousel-content-title w-bold">А тут<br>наші контакти</h3>
 						</div>
 					</div>
+
+					<div class="arrow-down">
+						<img class="arrow-down-img" src="images/logos/arrow-down.png" alt="Arrow">
+					</div>
 				</div>
 				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -74,15 +84,18 @@
 					<span class="carousel-control-next-icon" aria-hidden="true"></span>
 					<span class="sr-only">Next</span>
 				</a>
-		</div>
+				
+				
+			</div>
+		
 	</section>
 
 	<section id="about" class="mt-100">
 			
 			<div class="container">
 
-					<h3 class="text-center section-subtitle">Чим ми займаємось</h3> <!--text-center не працює-->
-					<h2 class="text-center section-title">ІСТОРІЯ ПРО НАС</h2>   <!--text-center не працює-->
+					<h3 class="text-center section-subtitle wow animate__animated animate__fadeInDown">Чим ми займаємось</h3> <!--text-center не працює-->
+					<h2 class="text-center section-title wow animate__animated animate__fadeInLeft">ІСТОРІЯ ПРО НАС</h2>   <!--text-center не працює-->
 					<hr class="titles-separator">
 					<p class="item-description text-center mt-50">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 
@@ -134,8 +147,8 @@
 
 	<section id="services" class="container mt-100">
 
-					<h3 class="section-subtitle text-center">З чим ми працюємо</h3> 
-					<h2 class="section-title text-center">Високоякісні послуги</h2>
+					<h3 class="section-subtitle text-center wow animate__animated animate__zoomIn">З чим ми працюємо</h3> 
+					<h2 class="section-title text-center wow animate__animated animate__flipInX">Високоякісні послуги</h2>
 					<hr class="titles-separator">
 
 					<div class="row items mt-100">
@@ -213,9 +226,9 @@
 	</section>
 
 	<section id="devices" class="devices mt-100" style="background-image: url(https://images.wallpaperscraft.com/image/mountain_sky_bw_127856_3840x2160.jpg);">
-		<h3 class="section-subtitle text-center">Для всіх девайсів</h3> 
-		<h2 class="section-title text-center">Унікальний дизайн</h2>
-		<hr class="titles-separator">
+		<h3 class="section-subtitle text-center wow animate__animated animate__swing">Для всіх девайсів</h3> 
+		<h2 class="section-title text-center wow animate__animated animate__fadeInUp">Унікальний дизайн</h2>
+		<hr class="titles-separator wow animate__animated animate__fadeIn">
 
 		<div class="devices-images">
 			<img class="devices-ipad" src="images/ipad.png">
@@ -229,8 +242,8 @@
 		
 		<div class="container">
 
-			<h3 class="text-center section-subtitle">Хто ми</h3> <!--text-center не працює-->
-					<h2 class="text-center section-title">ЗУСТРІЧАЙТЕ НАШУ КОМАНДУ</h2>   <!--text-center не працює-->
+			<h3 class="text-center section-subtitle wow animate__animated animate__bounceIn">Хто ми</h3> <!--text-center не працює-->
+					<h2 class="text-center section-title wow animate__animated animate__rubberBand">ЗУСТРІЧАЙТЕ НАШУ КОМАНДУ</h2>   <!--text-center не працює-->
 					<hr class="titles-separator">
 					<p class="item-description text-center mt-50">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 
@@ -330,6 +343,8 @@
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+		<script>new WOW().init();</script>
 		<script>
 			$('#partnerModal').on('show.bs.modal', function (event) 
 			{
